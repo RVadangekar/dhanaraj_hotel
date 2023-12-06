@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dhanaraj_hotel/static/css/main.fa47a194.css",
-    "main.js": "/dhanaraj_hotel/static/js/main.8c05ecdf.js",
+    "main.js": "/dhanaraj_hotel/static/js/main.ddefadbe.js",
     "static/media/biryani.jpg": "/dhanaraj_hotel/static/media/biryani.387f0f534f319f570b27.jpg",
     "static/media/bg.jpg": "/dhanaraj_hotel/static/media/bg.b54d50e44b665a1e5ad6.jpg",
     "static/media/sambhar-vada.jpg": "/dhanaraj_hotel/static/media/sambhar-vada.f9ef3a69bddcbf4712d0.jpg",
@@ -11,10 +11,10 @@
     "static/media/shahi-paneer.jpg": "/dhanaraj_hotel/static/media/shahi-paneer.5e2d5e22336e6c926bc8.jpg",
     "index.html": "/dhanaraj_hotel/index.html",
     "main.fa47a194.css.map": "/dhanaraj_hotel/static/css/main.fa47a194.css.map",
-    "main.8c05ecdf.js.map": "/dhanaraj_hotel/static/js/main.8c05ecdf.js.map"
+    "main.ddefadbe.js.map": "/dhanaraj_hotel/static/js/main.ddefadbe.js.map"
   },
   "entrypoints": [
     "static/css/main.fa47a194.css",
-    "static/js/main.8c05ecdf.js"
+    "static/js/main.ddefadbe.js"
   ]
 }
