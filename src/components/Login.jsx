@@ -24,7 +24,7 @@ function Login(){
                     setUser(userDetails.user.email);
                 });
                 navigate('/');
-                // alert('Login Successfully !!');
+                alert('Login Successfully !!');
             }
             catch(error){
                 console.log(error);
@@ -65,13 +65,13 @@ function Login(){
                                 <i className="uil uil-eye-slash pw_hide"></i>
                             </div>
 
-                            <div className="option_field">
+                            {/* <div className="option_field">
                                 <span className="checkbox">
                                     <input type="checkbox" id="check" />
                                     <label htmlFor="check">Remember me</label>
                                 </span>
                                 <Link href="/login" className="forgot_pw">Forgot password?</Link>
-                            </div>
+                            </div> */}
 
                             <button onClick={submitFunc} className="button">Login Now</button>
 
