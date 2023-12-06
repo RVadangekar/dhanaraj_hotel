@@ -14,7 +14,7 @@ import AdminLogin from './components/AdminLogin';
 
 function App() {
     return (
-    <BrowserRouter>
+    <BrowserRouter basename="/dhanaraj_hotel">
         <AppContext>
         <Routes>
             <Route path='/' element={<Home/>}/>
