@@ -1,10 +1,10 @@
 import './ProductPage.css';
-import { db } from '../config/firebase';
+import { auth, db } from '../config/firebase';
 import { getDocs, collection } from "firebase/firestore";
 import { useContext, useEffect, useState } from 'react';
 import { AiFillStar, AiOutlineHeart } from 'react-icons/ai';
 import Product from './Product';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Context } from '../Context';
 import LogoImg from '../assests/th.jpg';
 import p1 from '../assests/biryani.jpg';
@@ -16,7 +16,7 @@ import p6 from '../assests/sambhar-vada.jpg';
 
 function ProductPage() {
 
-    const { cart, setCart } = useContext(Context)
+    const { cart, setCart, setUser } = useContext(Context)
 
     const [products, setProducts] = useState([]);
     const [biryani, setBiryani] = useState([]);
@@ -27,6 +27,7 @@ function ProductPage() {
     const [southIndian, setSouthIndian] = useState([]);
 
     const productCollectionRef = collection(db, 'products');
+    const navigate = useNavigate();
 
     async function getProducts() {
         try {
@@ -63,6 +64,12 @@ function ProductPage() {
             return product?.category === "south indian";
         }))
     }, [products])
+
+    async function handleLogOut(){
+        auth.signOut();
+        setUser(undefined);
+        navigate('/');
+    }
 
     return (
         <div>
@@ -147,7 +154,7 @@ function ProductPage() {
                 <div id="cart">
                     <div class="taste-header">
                         <div class="user">
-                            <i class="fa fa-user-circle" id="circle"> Account</i>
+                            <i onClick={handleLogOut} class="fa fa-user-circle" id="circle">Logout</i>
                         </div>
                     </div>
                     <div id="category-list">

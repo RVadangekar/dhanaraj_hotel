@@ -23,7 +23,7 @@ function Login(){
                 await signInWithEmailAndPassword(auth, email, password).then((userDetails)=>{
                     setUser(userDetails.user.email);
                 });
-                navigate('/');
+                navigate('/products');
                 alert('Login Successfully !!');
             }
             catch(error){

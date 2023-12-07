@@ -19,8 +19,8 @@ function Home(){
                             {user ? 
                             <>
                                 <Link to='/products' className="nav_link">Product</Link>
-                                <Link to='/' className="nav_link">Services</Link>
-                                <Link to='/' className="nav_link">Contact</Link>
+                                {/* <Link to='/' className="nav_link">Services</Link>
+                                <Link to='/' className="nav_link">Contact</Link> */}
                             </> : <></>
                             }
                         </li>
